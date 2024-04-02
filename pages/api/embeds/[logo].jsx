@@ -9,6 +9,9 @@ export default async function handler(req) {
     const paths = new URL(req.url).pathname.split('/');
     const index = paths.indexOf('embeds');
     const slug = paths[index + 1];
-    console.log({slug});
-    return imageHandler(Event, [slug]);
+    console.log(req)
+    const url = new URL(req.url);
+    const params = new URLSearchParams(url.search);
+    const name = params.get("name")|| "";
+    return imageHandler(Event, [slug, name]);
 }
