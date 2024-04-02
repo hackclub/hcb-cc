@@ -36,7 +36,7 @@ function Image({ logo, name, preview = false }) {
             gap: '16px',
             justifyContent: 'flex-end'
         }}>
-            <div style={{ fontSize: calculateFontSize(name), textAlign: 'right', wordBreak: 'break-all'}}>
+            <div style={{ fontSize: calculateFontSize(name), textAlign: 'right', wordBreak: 'break-all', textWrap: 'balance'}}>
               {name}
             </div>
             <img src={logo} style={{marginRight: '0px', height: '200px', width: '200px', height: '200px'}} />
