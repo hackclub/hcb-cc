@@ -1,6 +1,3 @@
-import { Textfit } from 'react-textfit';
-
-
 // This is a slightly hacky way of 
 // avoiding overflow, it currently only works 
 // when we have square image logo

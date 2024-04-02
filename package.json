@@ -13,8 +13,7 @@
     "@vercel/og": "latest",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "react-textfit": "^1.1.1"
+    "react-dom": "latest"
   },
   "devDependencies": {
     "@types/node": "^18.15.5",
