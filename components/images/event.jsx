@@ -19,7 +19,6 @@ function calculateFontSize(string){
 }
 
 function Image({ logo, name, preview = false }) {
-    let string = "Hack Club HQ Epoch Y Come to Dehli now so great"
     return (
         <div style={{
             display: 'flex',
