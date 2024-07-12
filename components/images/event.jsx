@@ -35,10 +35,10 @@ function Image({ logo, name, preview = false }) {
             gap: '16px',
             justifyContent: 'flex-end'
         }}>
-            <div style={{ fontSize: calculateFontSize(name), textAlign: 'right', textWrap: 'balance', flexGrow: 1}}>
+            <div style={{ fontSize: calculateFontSize(name), textAlign: 'right', wordBreak: 'break-all', textWrap: 'balance'}}>
               {name}
             </div>
-            <img src={logo} style={{marginRight: '0px', height: '200px', width: '200px', height: '200px'}} />
+            <img src={logo} style={{marginRight: '0px', height: '200px', width: '200px'}} />
         </div>
     )
 }
@@ -49,7 +49,7 @@ const logos = {
 }
 
 Image.previewProps = {
-    name: "Hack Club HQ",
+    name: "Hack Club HQ Of Hack The Hack",
     logo: logos["bank"]
 }
 
